@@ -1,0 +1,68 @@
+.write { padding: 1.5rem 4rem 4rem; border-top: 2px solid #000; border-bottom: 1px solid #DDD; background-color: #fafafa; }
+.write select, .write input { padding: 0 1.5rem; font-size: 1.6rem; }
+.write label { display: inline-block; margin-bottom: 0.5rem; font-size: 1.4rem; font-weight: bold; }
+.write textarea { height: 55rem; padding: 1.5rem; border-radius: 4px; font-size: 1.6rem; resize: none; }
+.write_row { padding: 0.5rem; margin-top: 1.5rem; }
+.write_noti p {position:relative; width:100%; text-align:left; font-size:12px; color:#ccc; padding-left:10px; margin:5px;}
+.write_noti p:before {content:''; position:absolute; left:0; top:7px; width:3px; height:3px; background-color:#ccc; border-radius:100%;}
+.write_group { display: table; width: 100%; table-layout: fixed; margin-top: 1.5rem; }
+.write_group > * { display: table-cell; }
+.write_cell { padding: 0.5rem; }
+.write_goal { margin-top: 0; }
+.write_goal button { width: 16rem; height: 40px; text-indent: 30px; border-radius: 4px; background-image: url("../images/ico_graduation_cap_large.png"); background-repeat: no-repeat; background-position: 1.5rem center; background-size: 2.4rem; background-color: #666; font-size: 1.6rem; color: #FFF; }
+.write_guide { font-size: 1.4rem; padding: 1.3em 1.5em; margin-top: 2em; border: 1px solid #dbdbdb; background-color: #f5f5f5; }
+.write_guide h1 { font-size: inherit; font-weight: bold; }
+.write_guide ul li { font-weight: 300; padding-left: 1em; margin: 0.2em; text-indent: -1em; }
+.write_guide ul li:before { content: '-'; margin-right: 0.5rem; }
+.write_guide ul li strong { color: #ec2030; }
+.write_bottom { display: inline-block; width: 100%; margin-top: 3rem; text-align: right; }
+.write_bottom button, .write_bottom a { width: 80px; border-width: 1px; border-style: solid; border-radius: 4px; font-size: 1.6rem; text-align: center; vertical-align: middle; }
+.write_bottom button:not(:first-child), .write_bottom a:not(:first-child) { margin-left: 0.3rem; }
+.write_bottom button { height: 4rem; }
+.write_bottom a { display: inline-block; line-height: 3.8rem; }
+.write_bottom .btn_outline { border-color: #212121; background-color: #FFF; color: #212121; }
+.write_bottom .btn_gray { border-color: #666; background-color: #666; color: #FFF; }
+.write_bottom .btn_red { border-color: #ec2030; background-color: #ec2030; color: #FFF; }
+
+@media all and (min-width: 1024px) {
+  .write_goal button { background-image: url("../images/ico_graduation_cap.png"); background-size: auto; }
+}
+
+@media all and (max-width: 1023px) and (min-width: 720px) {
+  .write { padding: 2rem; }
+  .write select, .write input { font-size: 1.8rem; }
+  .write select { padding: 0 1.5rem; }
+  .write label { margin-bottom: 1rem; font-size: 1.6rem; }
+  .write input { font-size: 1.8rem; }
+  .write textarea { height: 45rem; }
+  .write_row { padding: 0.5rem; margin-top: 1rem; }
+  .write_goal { margin-top: 0; }
+}
+
+@media (max-width: 719px) {
+  .write { padding: 0 1rem 1rem; }
+  .write select, .write input { font-size: 1.2rem; }
+  .write select { padding: 0 1.5rem; }
+  .write label { margin-bottom: 1rem; font-size: 1.2rem; }
+  .write input { font-size: 1.2rem; }
+  .write textarea { height: 35rem; font-size: 1.4rem; }
+  .write_row { padding: 0.5rem; margin-top: 1rem; }
+  .write_goal { margin-top: 0; }
+  .write_goal button { width: 13rem; height: 40px; text-indent: 30px; background-size: 20px; font-size: 1.2rem; }
+  .write_guide { font-size: 1.1rem; }
+  .write_bottom { margin-top: 1.5rem; text-align: center; }
+}
+/* -------------------------- mobile landspace -------------------------- */
+@media (max-device-height:420px) and (orientation: landscape) {
+  .write { padding: 0 1rem 1rem; }
+  .write select, .write input { font-size: 1.2rem; }
+  .write select { padding: 0 1.5rem; }
+  .write label { margin-bottom: 1rem; font-size: 1.2rem; }
+  .write input { font-size: 1.2rem; }
+  .write textarea { height: 35rem; font-size: 1.4rem; }
+  .write_row { padding: 0.5rem; margin-top: 1rem; }
+  .write_goal { margin-top: 0; }
+  .write_goal button { width: 13rem; height: 40px; text-indent: 30px; background-size: 20px; font-size: 1.2rem; }
+  .write_guide { font-size: 1.1rem; }
+  .write_bottom { margin-top: 1.5rem; text-align: center; }
+}

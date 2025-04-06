@@ -1,0 +1,308 @@
+.main_contents {position:relative; width:100%; max-width:1280px; margin:auto;}
+.main_section_column {display:grid; grid-template-columns:49.0625% 49.0625%; grid-gap: 0 1.875%;}
+
+/* 비쥬얼 배너 */
+.main_banner_slider {width:100%; overflow:hidden;}
+.main_banner_slider .slick-track {display:flex; overflow:hidden;}
+.main_banner_item {outline:0;}
+.main_banner_item a {display:block; overflow:hidden; outline:0;}
+.main_banner_item img {width:100%;}
+.main_banner .slick-arrow {position:absolute; top:50%; z-index:9; width:60px; height:60px; background-size:cover; overflow:hidden; outline:0; -webkit-transform: translateY(-50%); transform: translateY(-50%); text-indent:-9999px;}
+.main_banner .slick-prev {left:0; background: url("../images/common/ico_arrow_left.svg") no-repeat center center; background-size:cover;}
+.main_banner .slick-next {right:0; background: url("../images/common/ico_arrow_right.svg") no-repeat center center; background-size:cover;}
+
+/* 타이틀 */
+.main_section {position:relative; margin-bottom:25px;}
+.main_section_title {font-weight:bold; font-size:2.6rem; margin-bottom:15px;}
+.main_section_more {position:absolute; top:12px; right:0; z-index:9; font-size:1.5rem; color:#757575;}
+.main_section_more:after {content: "+"; margin-left:5px; font-size:2rem; vertical-align:0.1rem;}
+
+/* 듀냐TV */
+.main_video {overflow:hidden;}
+.main_video_list {display:grid; grid-template-columns:49.0625% 49.0625%; grid-gap: 0 1.875%; overflow:hidden;}
+.main_video_list li a {display:flex; justify-content:space-between; width:99.9%; min-height:238px; box-sizing:border-box; padding:20px 0 20px 20px; border-radius:20px; background-color:#fff; border:1px solid #ddd; overflow:hidden;}
+.main_video_thumb {position:relative; width:57.34%; border:1px solid #eee; border-radius:10px;}
+.main_video_thumb img {width:100%; height:100%; border-radius:10px;}
+.main_video_text {width:42.66%; padding:0 4%;}
+.main_video_subject {max-height:auto; text-align:left; font-weight:bold; font-size:2rem; line-height:1.35; display:-webkit-box; -webkit-line-clamp:6; -webkit-box-orient:vertical; text-overflow:ellipsis; overflow:hidden;}
+.main_video_headline {text-align:left; font-weight:400; font-size:1.5rem; line-height:1.4; display:-webkit-box; -webkit-line-clamp:2; -webkit-box-orient:vertical; text-overflow:ellipsis; overflow:hidden; word-break:break-all;}
+
+/* 듀냐TV & 입시의정석 */
+.main_standard {overflow:hidden;}
+.main_standard_list {width:100%; overflow:hidden;}
+.main_standard_list li a {display:flex; justify-content:space-between; width:99.9%; min-height:238px; box-sizing:border-box; padding:20px 0 20px 20px; border-radius:20px; background-color:#fff; border:1px solid #ddd; overflow:hidden;}
+.main_standard_thumb {position:relative; width:57.34%; border:1px solid #eee; border-radius:10px;}
+.main_standard_thumb img {width:100%; height:100%; border-radius:10px;}
+.main_standard_text {width:42.66%; padding:0 4%;}
+.main_standard_subject {max-height:auto; text-align:left; font-weight:bold; font-size:2rem; line-height:1.35; display:-webkit-box; -webkit-line-clamp:6; -webkit-box-orient:vertical; text-overflow:ellipsis; overflow:hidden;}
+.main_standard_headline {text-align:left; font-weight:400; font-size:1.5rem; line-height:1.4; display:-webkit-box; -webkit-line-clamp:2; -webkit-box-orient:vertical; text-overflow:ellipsis; overflow:hidden; word-break:break-all;}
+
+/* HOT TALK & BOARD LIST */
+.main_board_list {width:100%; max-width:628px; font-size:1.6rem;}
+.main_board_list > li:not(:first-child) {margin-top:5px;}
+.main_board_list > li > a {position:relative; display:flex; padding:14px 2rem; border-radius:12px; background-color:#F9F9F9; overflow:hidden;}
+.main_board_list > li > a > span {display:flex; align-items:center;}
+
+.main_board_sort {display:flex; justify-content:center; align-items:center; width:82px; padding:2px 0; margin-right:18px; border-radius:5px;}
+.main_board_sort.go3 {color:#194188; background-color:#B0D7FF;}
+.main_board_sort.go2 {color:#238423; background-color:#ABD965;}
+.main_board_sort.go1 {color:#9C5B18; background-color:#F0B469;}
+
+.main_board_subject {display:inline-block !important; max-width:calc(100% - 280px); color:#666; line-height:2; white-space:nowrap; text-overflow:ellipsis; overflow:hidden;}
+.main_board_reply {margin-left:5px; color:#e98e95;}
+.main_board_hot i {display:flex; align-items:center; width:18px; margin-left:5px;}
+.main_board_hot i img {width:100%;}
+.main_board_like {position:absolute; right:20px; top:15px;}
+.main_board_like i {display:flex; align-items:center; width:16px; margin-left:5px;}
+.main_board_like i img {width:100%;}
+
+/* 꿈장학생 */
+.main_dream_student {overflow:hidden;}
+.dream_student_area {display:grid; grid-template-columns:23.59375% 23.59375% 23.59375% 23.59375%; grid-gap: 0 1.875%;}
+.student_box {position:relative; display:flex; flex-direction:column; align-items:center; padding:20px 20px 20px 20px; border-radius:20px; border:1px solid #eee; overflow:hidden; background: url('../images/common/dream_student_bg.png') repeat-x left top;}
+.student_name {width:100%; text-align:center; font-weight:bold; font-size:2.2rem; line-height:1;}
+.student_picture {width:100%; max-width:120px; text-align:center; margin:18px 0 22px 0;}
+.student_picture img {width:100%; border-radius:100%;}
+.student_university {width:100%;}
+.student_university dt {text-align:center; font-weight:bold; font-size:2rem; line-height:1; margin-bottom:8px;}
+.student_university dd {text-align:center; font-weight:400; font-size:1.8rem; line-height:1.3;}
+.student_university dd:last-child {display:flex; justify-content:center; align-items:center; margin-top:20px; min-height:70px; display:-webkit-box; -webkit-line-clamp:3; -webkit-box-orient: vertical; text-overflow:ellipsis; overflow:hidden;}
+
+.btn_studyMethod {position:absolute; left:50%; bottom:20px; width:180px; padding:7px 0; margin-left:-90px; display:flex; justify-content:center; align-items:center; text-align:center; font-weight:400; font-size:2rem; background-color:#eee; border-radius:10px;}
+.btn_studyMethod i {width:100%; max-width:30px; margin-right:5px;}
+.btn_studyMethod i img {width:100%;}
+
+/* 설문조사 */
+.main_survey {position:relative; overflow:hidden;}
+.main_survey_box a {display:flex; flex-direction:column; border-radius:20px; background-color:#fff; border:1px solid #eee; overflow:hidden;}
+.gallery_thumb {position:relative; width:100%;}
+.gallery_thumb img {width:100%;}
+.survey_info {position:relative; display:flex; align-items:center; width:100%; padding:14px 20px;}
+.survey_info .survey_info_status {display:flex; justify-content:center; align-items:center; width:90px; height:30px; margin-right:10px; text-align:center; font-weight:bold; font-size:1.4rem; color:#fff; border-radius:5px;}
+.survey_info .survey_info_status.pro {background-color:#EFBA51;}
+.survey_info .survey_info_status.end {background-color:#919191;}
+.survey_info .survey_info_target {text-align:left; font-weight:400; font-size:1.5rem; color:#212121;}
+.survey_info .survey_info_target em {position:relative; font-style:normal; font-weight:400; color:#EB2332; padding-left:10px; margin-left:10px;}
+.survey_info .survey_info_target em:before {content:''; position:absolute; left:0; top:5px;  display:block; width:1px; height:12px; background-color:#212121;}
+.survey_info .survey_info_date {position:absolute; right:20px; top:17px; text-align:right; font-weight:400; font-size:1.5rem; color:#666;}
+
+/* 밸런스 게임 */
+.balance_game {position:relative; width:100%; background-color:#FFF4F5;}
+.survey_tit {position:relative; display:flex; flex-direction:column; align-items:center; width:100%; padding:14px 20px 9px 20px;}
+.survey_tit dt {width:100%; text-align:center; font-weight:bold; font-size:2.2rem; color:#212121; margin-bottom:10px;}
+.survey_tit dd {width:100%; text-align:center; font-weight:400; font-size:1.6rem; color:#212121;}
+.progress_area {display:flex; justify-content:space-evenly; align-items:center; margin-bottom:15px;}
+.progress_area .cur_pro {text-align:left; font-weight:700; font-size:1.6rem; color:#212121; padding-left:10px;}
+.progress_area .rem_pro {text-align:left; font-weight:700; font-size:1.6rem; color:#212121; padding-right:7px;}
+.progress_area .pro_bar {position:relative; width:80%; height:10px; background-color:#F88990; border-radius:10px;}
+.progress_area .pro_bar > span {position:absolute; left:0; top:0; height:10px; background-color:#A048F8; border-radius:10px;}
+.progress_area .pro_bar > span:after {content:''; position:absolute; right:-7px; top:-3px; width:15px; height:15px; background-color:#F9F9F9; border:1px solid #666; border-radius:100%;}
+
+/* 대입뉴스 */
+.main_news {position:relative; overflow:hidden;}
+.main_news_list {padding:4px 20px; background-color:#fff; border-radius:20px; border:1px solid #eee;}
+.main_news_list > li {border-bottom:1px dashed #ddd;}
+.main_news_list > li:last-child {border-bottom:0;}
+.main_news_list > li > a {position:relative; display:table; width:100%; table-layout:fixed; height:5.8rem;}
+.main_news_list > li > a > * {display:table-cell; vertical-align:middle;}
+.main_news_sort {width:90px; font-size:1.4rem;}
+.main_news_sort em {display:block; padding:4px 0; border:1px solid #424242; border-radius:3px; font-weight:400; text-align:center;}
+.main_news_subject {width:75%; white-space:nowrap; text-overflow: ellipsis; overflow: hidden; padding: 0 2rem; font-size: 1.6rem; }
+.main_news_date {position:absolute; right:0; top:16px; font-weight:400; font-size:1.6rem; color:#666;}
+
+/* 입시설명회 */
+.main_present_list {display:grid; grid-template-columns:48.089171% 48.089171%; grid-gap: 0 3.821658%;}
+.main_present_list > li > a {position:relative; display:block; background-color:#fff; border-radius:20px; overflow:hidden;}
+.main_present_sort {display:flex; position: absolute; top: 0; left: 0; z-index: 10; max-width: 90%; border-radius: 0 0 12px 0; font-size: 1.3rem; text-align: center; color: #fff; overflow: hidden; white-space:nowrap;}
+.main_present_sort > span { float: left; padding: 0 1rem; line-height: 30px; }
+.main_present_sort_gray { min-width: 90px; background-color: #9b9b9b; }
+.main_present_sort_pink { min-width: 60px; background-color: #e6a6a6; }
+.main_present_thumb {position:relative; z-index:1; overflow:hidden;}
+.main_present_thumb img {width:100%; height:100%;}
+.main_present_text {padding:30px 30px; border-radius:0 0 20px 20px; border:1px solid #eee; border-top:0;}
+.main_present_subject {white-space:nowrap; text-overflow:ellipsis; overflow:hidden; margin-bottom:10.5px; font-size:1.5rem; font-weight:bold; color:#212121;}
+.main_present_headline {display:-webkit-box; -webkit-line-clamp:2; -webkit-box-orient:vertical; text-overflow:ellipsis; overflow:hidden; height:3em; font-size:2rem; font-weight:400; color:#212121;}
+
+/* main_footer_banner */
+.main_footer_banner {width:100%;}
+.main_footer_banner .banner_img {display:block; width:100%;}
+.main_footer_banner .banner_img img {width:100%;}
+.main_footer_banner .banner_img .pc_img {display:none;}
+.main_footer_banner .banner_img .m_img {display:block;}
+
+/* -------------------------- only desktop -------------------------- */
+@media all and (min-width: 1024px) {
+  .main_contents:after {content: ''; display:block; clear:both;}
+
+  /* main_footer_banner */
+  .main_footer_banner .banner_img .pc_img {display:block;}
+  .main_footer_banner .banner_img .m_img {display:none;}
+}
+
+/* -------------------------- tablet -------------------------- */
+@media all and (max-width: 1023px) {
+    .main_contents {margin-top:2rem; padding:0 4%; font-size:calc(5px + 0.5vw);}
+    .main_section_column {grid-template-columns:100%; grid-gap: 0 0;}
+
+    /* 타이틀 */
+    .main_section_more {top:5px; font-size:2.2rem;}
+
+    /* 듀냐TV */
+    .main_video_list {grid-template-columns:100%; grid-gap: 0 0;}
+    .main_video_list li a {min-height:auto;}
+    .main_video_subject {min-height:84%; font-size:2.4rem; -webkit-line-clamp:6;}
+    .main_video_headline {font-size:2.4rem;}
+
+    /* 듀냐TV & 입시의정석 */
+    .main_standard_list li a {min-height:auto;}
+    .main_standard_subject {min-height:84%; font-size:2.4rem;}
+    .main_standard_headline {font-size:2.4rem;}
+
+    /* HOT TALK & BOARD LIST */
+    .main_board_list {max-width:100%; font-size:2.4rem;}
+    .main_board_sort {font-size:2rem; width:110px; padding:0;}
+    .main_board_subject {max-width:calc(100% - 57%);}
+    .main_board_hot i {width:20px; margin-top:5px;}
+    .main_board_like {top:20px;}
+    .main_board_like i {width:20px; margin-top:8px;}
+
+    /* 꿈장학생 */
+    .dream_student_area {grid-template-columns:104%; left:-2%;}
+    .student_box {display:flex !important; margin:0 1%; padding:20px 0;}
+    .student_name {font-size:2.4rem;}
+    .student_picture {max-width:140px;}
+    .student_university dt {font-size:2.4rem;}
+    .student_university dd {font-size:2.2rem;}
+    .student_university dd:last-child {min-height:90px;}
+    .btn_studyMethod {font-size:2.2rem;}
+
+    /* 설문조사 */
+    .survey_info {display:flex; flex-direction:column; align-items:start; padding:20px;}
+    .survey_info .survey_info_status {width:110px; height:36px; font-size:2.2rem;}
+    .survey_info .survey_info_target {font-size:2.2rem; padding:15px 0 5px 0;}
+    .survey_info .survey_info_target em {padding-left:20px; margin-left:20px;}
+    .survey_info .survey_info_target em:before {left:0; top:8px; height:18px;}
+    .survey_info .survey_info_date {position:relative; right:auto; top:auto; font-size:2.2rem;}
+
+    /* 밸런스 게임 */
+    .survey_tit dt {font-size:2.6rem; margin-bottom:7px;}
+    .survey_tit dd {font-size:2.2rem;}
+    .progress_area .cur_pro {font-size:2.2rem; margin-top:-5px;}
+    .progress_area .rem_pro {font-size:2.2rem; margin-top:-5px;}
+    .progress_area .pro_bar {width:76%; height:15px; border-radius:15px;}
+    .progress_area .pro_bar > span {height:15px; border-radius:15px;}
+    .progress_area .pro_bar > span:after {right:-10px; top:-4px; width:20px; height:20px;}
+
+    /* 대입뉴스 */
+    .main_news_list {padding:10px 20px;}
+    .main_news_list > li > a {height:6.5rem;}
+    .main_news_sort {width:110px; font-size:2rem;}
+    .main_news_sort em {padding:4px 0;}
+    .main_news_subject {width:67%; padding:0 2rem; font-size:2.4rem;}
+    .main_news_date {top:15px; font-size:2.4rem;}
+
+    /* 입시설명회 */
+    .main_present_subject {font-size:2rem;}
+}
+
+/* -------------------------- mobile -------------------------- */
+@media (max-width: 719px) {
+    .main_section {margin-bottom:20px;}
+
+    /* 타이틀 */
+    .main_section_title {font-size:1.7rem; margin-bottom:10px;}
+    .main_section_more {font-size:1.4rem;}
+    .main_section_more:after {font-size:1.3rem;}
+
+    /* 듀냐TV */
+    .main_video_list li a {padding:10px 0 10px 10px; border-radius:10px;}
+    .main_video_thumb img {border-radius:8px;}
+    .main_video_subject {min-height:auto; font-size:1.6rem; line-height:1.5;}
+    .main_video_headline {font-size:1.4rem;}
+
+    /* 입시의 정석 */
+    .main_standard_list li a {padding:10px 0 10px 10px; border-radius:10px;}
+    .main_standard_thumb img {border-radius:8px;}
+    .main_standard_subject {min-height:auto; font-size:1.6rem; line-height:1.5;}
+    .main_standard_headline {font-size:1.4rem;}
+
+    /* HOT TALK & BOARD LIST */
+    .main_board_list {font-size:1.4rem;}
+    .main_board_list > li > a {padding:10px; border-radius:10px;}
+    .main_board_sort {font-size:1.2rem; width:60px; margin-right:10px;}
+    .main_board_subject {max-width:calc(100% - 65%); letter-spacing:-0.05em;}
+    .main_board_hot i {width:14px; margin-top:5px;}
+    .main_board_like {top:12px; right:10px; letter-spacing:-0.05em;}
+    .main_board_like i {width:14px; margin:5px 0 0 5px;}
+
+    /* 꿈장학생 */
+    .dream_student_area {grid-template-columns:102%; left:-1%;}
+    .student_box {margin:0 0.5%; background-position:left -20px;}
+    .student_name {font-size:1.6rem;}
+    .student_picture {max-width:100px;}
+    .student_university dt {font-size:1.6rem;}
+    .student_university dd {font-size:1.4rem;}
+    .student_university dd:last-child {min-height:55px;}
+    .btn_studyMethod {width:140px; margin-left:-70px; font-size:1.4rem;}
+
+    /* 설문조사 */
+    .main_survey_box a {border-radius:10px;}
+    .survey_info {padding:15px;}
+    .survey_info .survey_info_status {width:80px; height:25px; font-size:1.4rem;}
+    .survey_info .survey_info_target {font-size:1.4rem; padding:10px 0 0 0;}
+    .survey_info .survey_info_target em {padding-left:10px; margin-left:10px;}
+    .survey_info .survey_info_target em:before {left:0; top:4px; height:12px;}
+    .survey_info .survey_info_date {font-size:1.4rem;}
+
+    /* 밸런스 게임 */
+    .survey_tit {padding:14px 10px 15px 10px;}
+    .survey_tit dt {font-size:1.6rem; margin-bottom:3px; letter-spacing:-0.05em;}
+    .survey_tit dd {font-size:1.4rem; letter-spacing:-0.05em;}
+    .progress_area .cur_pro {font-size:1.4rem; margin-top:-5px;}
+    .progress_area .rem_pro {font-size:1.4rem; margin-top:-5px;}
+    .progress_area .pro_bar {width:70%; height:10px; border-radius:10px;}
+    .progress_area .pro_bar > span {height:10px; border-radius:10px;}
+    .progress_area .pro_bar > span:after {right:-10px; top:-4px; width:15px; height:15px;}
+
+    /* 대입뉴스 */
+    .main_news_list {padding:5px 10px; border-radius:10px;}
+    .main_news_list > li > a {height:4.5rem;}
+    .main_news_sort {width:70px; font-size:1.2rem;}
+    .main_news_sort em {padding:4px 0;}
+    .main_news_subject {width:67%; padding:0 1rem; font-size:1.4rem; letter-spacing:-0.05em;}
+    .main_news_date {top:12px; font-size:1.4rem; letter-spacing:-0.05em;}
+
+    /* 입시설명회 */
+    .main_present_list {grid-template-columns: 49% 49%; grid-gap:0 2%;}
+    .main_present_list > li > a {border-radius:10px;}
+    .main_present_sort { font-size: 1rem; }
+    .main_present_sort span { min-width: 0; line-height: 2rem; }
+    .main_present_text {padding:20px 15px; border-radius:0 0 10px 10px;}
+    .main_present_subject {font-size:1.4rem;}
+    .main_present_headline {font-size:1.4rem;}
+}
+
+@media (max-width: 540px) {
+    .main_video_subject,
+    .main_standard_subject {-webkit-line-clamp:5;}
+}
+
+@media (max-width: 450px) {
+    .main_video_subject,
+    .main_standard_subject {-webkit-line-clamp:4;}
+}
+
+@media (max-width: 375px) {
+    .main_news_subject {width:60%;}
+    .main_video_subject,
+    .main_standard_subject {-webkit-line-clamp:3;}
+}
+
+@media (max-width: 320px) {
+    .main_video_subject {margin-bottom:5px;}
+    .main_video_headline,
+    .main_standard_headline {-webkit-line-clamp:1;}
+    .main_board_like,
+    .main_news_date {display:none !important;}
+    .main_present_text {padding:10px;}
+}

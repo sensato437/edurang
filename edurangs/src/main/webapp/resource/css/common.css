@@ -1,0 +1,191 @@
+@charset "UTF-8";
+/* ------------------------------------------ font import ------------------------------------------ */
+
+/*@import url("https://fonts.googleapis.com/earlyaccess/notosanskr.css");*/
+
+/* ----- Noto Sans KR ---- */
+@font-face {
+    font-family: 'Noto Sans KR';
+    font-style: normal;
+    font-weight: 300;
+    src: url('../fonts/NotoSansKR-Light.woff2') format('woff2'),
+        url('../fonts/NotoSansKR-Light.woff') format('woff'),
+        url('../fonts/NotoSansKR-Light.otf') format('opentype');
+}
+@font-face {
+    font-family: 'Noto Sans KR';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/NotoSansKR-Regular.woff2') format('woff2'),
+        url('../fonts/NotoSansKR-Regular.woff') format('woff'),
+        url('../fonts/NotoSansKR-Regular.otf') format('opentype');
+}
+@font-face {
+    font-family: 'Noto Sans KR';
+    font-style: normal;
+    font-weight: 500;
+    src: url('../fonts/NotoSansKR-Medium.woff2') format('woff2'),
+        url('../fonts/NotoSansKR-Medium.woff') format('woff'),
+        url('../fonts/NotoSansKR-Medium.otf') format('opentype');
+}
+@font-face {
+    font-family: 'Noto Sans KR';
+    font-style: normal;
+    font-weight: bold;
+    src: url('../fonts/NotoSansKR-Bold.woff2') format('woff2'),
+        url('../fonts/NotoSansKR-Bold.woff') format('woff'),
+        url('../fonts/NotoSansKR-Bold.otf') format('opentype');
+}
+@font-face {
+    font-family: 'Noto Sans KR';
+    font-style: normal;
+    font-weight: 900;
+    src: url('../fonts/NotoSansKR-Black.woff2') format('woff2'),
+        url('../fonts/NotoSansKR-Black.woff') format('woff'),
+        url('../fonts/NotoSansKR-Black.otf') format('opentype');
+}
+
+/* ------------------------------------------ reset ------------------------------------------ */
+html, body {width:100%;}
+* { margin: 0; padding: 0; -webkit-box-sizing: border-box; box-sizing: border-box; }
+html { margin: 0; padding: 0; font-size:62.5%;}
+/*@media screen and (max-width:1023px) { html {font-size:10px}}
+@media screen and (max-width:719px) { html {font-size:6px} }
+@media screen and (max-width:370px) { html {font-size:5.5px} }
+@media screen and (max-width:350px) { html {font-size:5px} }
+@media screen and (max-device-height:420px) and (orientation: landscape) { html {font-size:6px} } */
+body, input, select, button, textarea, h1, h2, h3, h4, h5, h6, table { color: #212121; font-family: 'Noto Sans KR','맑은 고딕','Malgun Gothic','돋움','Dotum','AppleGothic',sans-serif; line-height: 1.5; font-weight: 400; word-wrap: break-word; word-break: keep-all; }
+label { vertical-align: middle; cursor:pointer; }
+address, em { font-style: normal; }
+fieldset, img { border: 0; vertical-align: middle; }
+button { border:0; background-color:transparent; vertical-align:middle; cursor:pointer; }
+ul, ol, dl, dd, li { list-style: none; }
+input, textarea, select { border: 0; vertical-align: middle; }
+article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary { display: block; }
+a { text-decoration: none; color: #212121; }
+a:hover { text-decoration: none; }
+table { width: 100%; border-spacing: 0; border-collapse: collapse; }
+iframe { margin: 0; border: 0; width: 100%; height: 100%; }
+input[type="text"], input[type="password"], input[type="number"], input[type="tel"], input[type="email"], select { -webkit-box-sizing: border-box; box-sizing: border-box; -webkit-border-radius: 0; -webkit-appearance: none; }
+input[type="text"], input[type="password"], input[type="number"], input[type="tel"], input[type="email"], input[type="date"]:focus { vertical-align: middle; }
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder { color: #a0a0a0; }
+input[type="number"]::-webkit-outer-spin-button, input[type="number"]::-webkit-inner-spin-button { -webkit-appearance: none; margin: 0; }
+textarea { -webkit-border-radius: 0; -webkit-appearance: none; }
+input[type="image"] { -webkit-border-radius: 0; -webkit-appearance: none; }
+input[type="button"], input[type="submit"] { -webkit-appearance: button; border-radius: 0; }
+input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill { -webkit-box-shadow: 0 0 0 30px white inset; }
+select::-ms-expand { display: none; }
+figcaption, caption, legend, .blind, .skip { position: fixed; overflow: hidden; border: 0; margin: -1px; width: 1px; height: 1px; clip: rect(1px, 1px, 1px, 1px); -webkit-clip-path: inset(50%); clip-path: inset(50%); }
+
+.hidden {display:none !important;}
+.no_scroll {overflow:hidden;}
+
+/* ------------------------------------------ Clear (Margin, Padding) ------------------------------------------ */
+.mar_t0 {margin-top:0 !important;}
+.mar_b0 {margin-bottom:0 !important;}
+.mar_l0 {margin-left:0 !important;}
+.mar_r0 {margin-right:0 !important;}
+.pad_t0 {padding-top:0 !important;}
+.pad_b0 {padding-bottom:0 !important;}
+.pad_r0 {padding-right:0 !important;}
+.pad_l0 {padding-left:0 !important;}
+
+.pc_only_i {display:inline !important;}
+.pc_only_ib {display:inline-block !important;}
+.pc_only_b {display:block !important;}
+.pc_only_f {display:flex !important;}
+.mo_only_i {display:none !important;}
+.mo_only_ib {display:none !important;}
+.mo_only_b {display:none !important;}
+.mo_only_f {display:none !important;}
+.mo_only_t {display:none !important;}
+
+.mwAuto {max-width:none !important;}
+
+/* scrollbar */
+.scrollbar::-webkit-scrollbar {overflow:hidden; width:4px; height:8px;}
+.scrollbar::-webkit-scrollbar-thumb {background-color:#bebebe; outline:none; border-radius:8px;}
+.scrollbar::-webkit-scrollbar-track {box-shadow:none; background:transparent; border-radius:8px;}
+
+/* ------------------------------------------ form ------------------------------------------ */
+select, input[type="text"], input[type="password"], input[type="number"], input[type="tel"], input[type="email"] { width: 100%; height: 40px; border: 1px solid #ccc; border-radius: 4px; line-height: 3.8rem; font-size: 1.4rem; font-weight: 300; color: #000; }
+select { width: 100%; height: 4rem; padding: 0 3rem 0 1rem; border: 1px solid #CCC; border-radius: 4px; background-image: url("../images/common/ico_arrow_down_red.svg"); background-repeat: no-repeat; background-position: calc(100% - 10px); background-color: #FFF; background-size: 10px; -webkit-appearance: none; }
+select.select_gray { background-image: url("../images/common/ico_arrow_down_gray.svg"); color: #919191; }
+input[type="text"], input[type="password"], input[type="number"], input[type="tel"], input[type="email"] { padding: 0 2rem; }
+textarea { width: 100%; padding: 1.5rem; line-height: 2.1rem; border: 1px solid #ccc; }
+.chk_box {display:inline-flex}
+.chk_box input[type="checkbox"] {width:24px; height:24px; padding:0; background:url('../images/common/ico_inp_chk.png') no-repeat 0 0; background-size:24px auto; border-radius:0; -webkit-appearance:none}
+.chk_box input[type="checkbox"] + label {margin-left:0.5rem; line-height:2.4rem; font-size:1.6rem; color:#898989;}
+.chk_box input[type="checkbox"]:checked {background-position:0 -24px}
+.chk_box input[type="checkbox"]:disabled {background-position:0 -48px}
+.chk_box input[type="checkbox"]:checked:disabled {background-position:0 -72px}
+.chk_box input[type="checkbox"]:checked + label, input[type="checkbox"]:disabled + label {color:#393939}
+.chk_box.no_label input[type="checkbox"] + label {display:none;}
+.chk_wrap .chk_row + .chk_row {margin-top:10px;}
+.chk_wrap .chk_box + .chk_box {margin-left:30px;}
+
+/* ------------------------------------------ pagination ------------------------------------------ */
+.pagination { position: relative; z-index: 1; font-size: 1.6rem; text-align: center; }
+.pagination a { display: inline-block; width: 26px; height: 26px; background-repeat: no-repeat; background-position: center; background-size: auto 12px; line-height: 99; overflow: hidden; vertical-align: middle; }
+.pagination_first, .pagination_prev { margin-right: 0.8rem; }
+.pagination_next, .pagination_last { margin-left: 0.8rem; }
+.pagination_first { background-image: url(../images/common/ico_pagination_first.svg); }
+.pagination_prev { background-image: url(../images/common/ico_pagination_prev.svg); }
+.pagination_next { background-image: url(../images/common/ico_pagination_next.svg); }
+.pagination_last { background-image: url(../images/common/ico_pagination_last.svg); }
+.pagination > span {display: inline-block; margin:0 0.7rem; font-weight:300; color:#919191; vertical-align:middle; cursor:pointer;}
+.pagination > span.current {display:inline-block; font-weight:bold; color:#ec2030;}
+
+/* Danchoo */
+.chatBot {position:fixed; overflow:inherit; width:400px; height:100%; max-height:750px; border:1px solid black; min-width:400px; right:-50%; display:none; bottom:10px; transition:1s; animation:fade-in 0.5s; z-index:9999;}
+.chatBot_message {width:auto; max-width:100%; cursor:pointer; word-break:break-all; position:fixed; color:white; text-align:left; background-color:#816CFF; padding:10px 15px; border-radius:15px 15px 0px 15px; transition:1s; animation:fade-in 0.5s; animation-fill-mode:forwards; cursor:pointer; transform:rotateY(90deg); bottom:100px; right:140px; font-size:13px; line-height:1.5; letter-spacing:0em; z-index:9999;}
+
+@media all and (min-width: 1024px) {
+  select { background-image: url("../images/common/ico_arrow_down_red.png"); background-size: auto; }
+  select.select_gray { background-image: url("../images/common/ico_arrow_down_gray.png"); }
+  .pagination > a { background-image: url(../images/common/ico_pagination.png); background-repeat: no-repeat; background-size: auto; line-height: 99; overflow: hidden; }
+  .pagination > .pagination_first { background-position: 3px center; }
+  .pagination > .pagination_prev { background-position: -16px center; }
+  .pagination > .pagination_next { background-position: -38px center; }
+  .pagination > .pagination_last { background-position: -57px center; }
+}
+
+@media all and (max-width: 1023px) {
+  .pc_only_i {display:none !important;}
+  .pc_only_ib {display:none !important;}
+  .pc_only_b {display:none !important;}
+  .pc_only_f {display:none !important;}
+  .mo_only_i {display:inline !important;}
+  .mo_only_ib {display:inline-block !important;}
+  .mo_only_b {display:block !important;}
+  .mo_only_f {display:flex !important;}
+  .mo_only_t {display:table !important;}
+
+  /* Danchoo */
+  .chatBot {min-width:100%; max-height:100%; right:0 !important; top:0 !important;}
+}
+
+@media all and (max-width: 1023px) and (min-width: 720px) {
+  .pagination { font-size: 1.8rem; }
+}
+
+@media all and (max-width: 719px) {  
+  .pagination { font-size: 1.4rem; }
+  .pagination_current { margin: 0 1rem; }
+  .pagination_current i { margin: 0 1rem; }
+  .pagination_first, .pagination_prev, .pagination_next, .pagination_last { margin: 0; }
+  select, input[type="text"], input[type="password"], input[type="number"], input[type="tel"], input[type="email"] { font-size: 1.4rem; }/* 2021-08-02 수정 */
+}
+
+@media screen and (max-width: 600px) and (hover: hover) {
+    .chatBot {width:100%; height:100%; min-width:100%; max-height:100%; margin:-12px; } 
+}
+
+@media screen and (max-width: 719px) { 
+    .chatBot {width:100%; height:100%; max-height:100%; min-width:100%; bottom:0;}
+    .chatBot_message {bottom:55px; right:80px; font-size:12px; padding:10px 9px; line-height:1.4; letter-spacing:-0.04em;}
+}
+
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
+    .chatBot {width:100%; height:100%; max-height:100%; min-width:100%; bottom:0; right:0 !important;}
+}
